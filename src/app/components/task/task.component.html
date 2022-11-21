@@ -1,0 +1,9 @@
+<div class="task">
+  <h3 class="heading" [ngClass]="{completed: task.completed}">
+    {{task.title}}
+  </h3>
+  <div class="actions">
+    <app-button (click)="onComplete.emit()">complete</app-button>
+    <app-button (click)="onDelete.emit()">delete</app-button>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<h1>Animals</h1>
+
+<div *ngFor="let animal of (animals$ | async)">
+  {{animal.name}}
+  {{animal.color}}
+</div>
+
+<button (click)="addAnimal()">Add Animal</button>

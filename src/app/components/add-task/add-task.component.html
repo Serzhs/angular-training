@@ -1,0 +1,10 @@
+<form (submit)="submitHandler($event)" class="form">
+  <input
+    type="text"
+    placeholder="Buys eggs..."
+    [value]="value"
+    (input)="onChange($event)"
+    required
+  >
+  <app-button [disabled]="loading" type="submit">Submit</app-button>
+</form>

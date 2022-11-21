@@ -1,0 +1,19 @@
+.button {
+  background-color: #83d9db;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid #83d9db;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  font-size: 16px;
+  text-transform: capitalize;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

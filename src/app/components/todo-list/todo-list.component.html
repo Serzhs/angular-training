@@ -1,0 +1,8 @@
+<div class="wrapper">
+    <app-task
+      *ngFor="let task of tasks"
+      [task]="task"
+      (onDelete)="onDelete.emit(task.id)"
+      (onComplete)="onComplete.emit(task)"
+    ></app-task>
+</div>

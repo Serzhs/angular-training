@@ -1,0 +1,16 @@
+
+<app-add-task
+  [loading]="loading"
+  [(value)]="inputValue"
+  (onSubmit)="addTask()"
+></app-add-task>
+
+<h1 *ngIf="loading">Loading...</h1>
+
+<app-todo-list
+  [tasks]="tasks"
+  (onDelete)="deleteTask($event)"
+  (onComplete)="completeTask($event)"
+>
+
+</app-todo-list>
